@@ -23,18 +23,6 @@ The project does **not** include the copyrighted “Sajan Sajan” recording. Th
 3. Put it in `public/audio/`.
 4. Re-run `npm run dev` or redeploy. Press Play in the music player; browsers require a user gesture before audio starts.
 
-Alternatively, use the **upload icon** in the music player to select an audio file from your device. This works immediately without copying the file into the project, but the selected file is local to that browser session and is not deployed to visitors.
-
-## Deploy
-Import the project into Vercel and deploy. `public/_redirects` is included for static-host SPA fallback; for Vercel, add `vercel.json` with:
-```json
-{"rewrites":[{"source":"/(.*)","destination":"/"}]}
-```
-
-Update the email address in `src/pages/Contact.jsx` if needed.
-
-## Code organization
-
 - React pages and shared components are formatted with readable spacing, descriptive names, and consistent imports.
 - Tailwind CSS is configured in `tailwind.config.js`.
 - Global resets and common layout utilities use Tailwind's `@apply` layer in `src/index.css`.
